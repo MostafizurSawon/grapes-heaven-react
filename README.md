@@ -11,7 +11,8 @@
 ### About
 
 # I have used the following to build the website.
-## React
+## Vanilla Javascript
+## React JS
 ## React-Bootstrap
 ## Font Awesome
 ## React Router
