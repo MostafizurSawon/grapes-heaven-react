@@ -8,7 +8,7 @@
     {
         "key": "2",
         "name": "Beautiful Campus",
-        "description": "We have beautiful campus so that you can learn comfortably. We will practically show you how can you grow grapes in your own land.",
+        "description": "We have beautiful campus so you can learn comfortably. We will practically show you how can you grow grapes in your own land.",
         "img": "./service/servicetwo.jpg"
     },
     {
@@ -20,7 +20,7 @@
     {
         "key": "4",
         "name": "Rich Library",
-        "description": "We have Absolutely one of the best library. Here you can read all the famous book about grapes.",
+        "description": "We have one of the best library. Here you can read all famous books about grapes.",
         "img": "./service/four.jpg"
     },
     {

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Accordion, Card, CardGroup, Carousel, Col, Image, Row, Button, Badge, Table } from 'react-bootstrap';
+import { Accordion, Card, Carousel, Col, Image, Row, Button, Badge, Table } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import HomeService from './HomeService/HomeService';
 import './Home.css';
 import grapes from '../../images/black.jpg';
@@ -13,28 +15,28 @@ const Home = () => {
         fetch('./grapes.JSON')
         .then(res=>res.json())
         .then(data => setServices(data))
-    },[])
+    },[]);
+    const add = <FontAwesomeIcon icon={faPlus} />
     return (
         <div className="container">
-
         <div className="my-5">
         <Row>
             <Col>
-            <h2 className="text-success mt-5">Who Are We?</h2>
+            <h2 className="mt-5">Welcome to <span className="text-info">Grapes Heaven</span></h2>
             <p>We offer courses for growing grapes. As we all know grape is a popular fruit. But most of the people dont know how to grow it properly. So we are offering course so that you can learn how to grow grapes properly.
                 <br /> <br />
                 A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis.
-Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juice, jelly, grape seed extract, vinegar, and grape seed oil, or dried as raisins, currants and sultanas. Grapes are a non-climacteric type of fruit, generally occurring in clusters.
+                Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juice, jelly, grape seed extract, vinegar, and grape seed oil, or dried as raisins, currants and sultanas. Grapes are a non-climacteric type of fruit, generally occurring in clusters.
             </p>
             </Col>
             <Col>
-                <img src="https://image.freepik.com/free-photo/grape-farmers-are-happy-sell-online-market-grapes_1150-5792.jpg" alt="" />
+            <Image src="https://image.freepik.com/free-photo/grape-farmers-are-happy-sell-online-market-grapes_1150-5792.jpg" fluid />
             </Col>
         </Row>
         </div>
 
         <div className="my-5">
-            <h2 className="text-info mb-3">Our Offering Courses</h2>
+            <h2 className="text-info mb-5">Our Offering Courses</h2>
         <Row>
             <Col sm>
             <Card>
@@ -44,7 +46,7 @@ Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juic
                     <Card.Text>
                     Grow grapes in your garden after completing this course.
                     </Card.Text>
-                    <Button variant="success">Enroll</Button>
+                    <Button variant="success">{add} Enroll Now</Button>
                 </Card.Body>
                 </Card>
             </Col>
@@ -56,7 +58,7 @@ Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juic
                     <Card.Text> 
                     Grow grapes in your garden after completing this course.
                     </Card.Text>
-                    <Button variant="success">Enroll</Button>
+                    <Button variant="success">{add} Enroll Now</Button>
                 </Card.Body>
                 </Card>
             </Col>
@@ -68,11 +70,48 @@ Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juic
                     <Card.Text>
                     Grow grapes in your garden after completing this course.
                     </Card.Text>
-                    <Button variant="success">Enroll</Button>
+                    <Button variant="success">{add} Enroll Now</Button>
                 </Card.Body>
                 </Card>
             </Col>
-            
+        </Row>
+        <Row className="my-4">
+            <Col sm>
+            <Card>
+                <Card.Header>2 Month Crash Course</Card.Header>
+                <Card.Body>
+                    <Card.Title>Course Fee : ৳ 5000</Card.Title>
+                    <Card.Text>
+                    Learn few tips and tricks
+                    </Card.Text>
+                    <Button variant="success">{add} Enroll Now</Button>
+                </Card.Body>
+                </Card>
+            </Col>
+            <Col sm>
+            <Card>
+                <Card.Header>How to prepare soil</Card.Header>
+                <Card.Body>
+                    <Card.Title>Course Fee : ৳ 2000 <Badge bg="secondary">New</Badge></Card.Title>
+                    <Card.Text> 
+                    Learn how to preapare your soil.
+                    </Card.Text>
+                    <Button variant="success">{add} Enroll Now</Button>
+                </Card.Body>
+                </Card>
+            </Col>
+            <Col sm>
+            <Card>
+                <Card.Header>2 Year Course</Card.Header>
+                <Card.Body>
+                    <Card.Title>Course Fee : ৳ 45000</Card.Title>
+                    <Card.Text>
+                   Learn everything we have to over.
+                    </Card.Text>
+                    <Button variant="success">{add} Enroll Now</Button>
+                </Card.Body>
+                </Card>
+            </Col>
         </Row>
         </div>
 

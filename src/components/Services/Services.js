@@ -11,7 +11,7 @@ const Services = () => {
     }, []);
     return (
         <div className="container mt-3">
-            <h3>We Provide World class service. Check for yourself.</h3>
+            <h3 className="text-info">We Provide World class service. Check for yourself.</h3>
         <div>
         <Row xs={1} md={3} className="g-4 my-1">
             {
