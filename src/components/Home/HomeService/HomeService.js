@@ -1,11 +1,21 @@
 import React from 'react';
+import { Card, Col } from 'react-bootstrap';
+import './HomeService.css';
 
 const HomeService = (props) => {
-    const {name, img} = props.grapes;
+    const {name, img, description} = props.grapes;
     return (
-        <div>
-            service: {name}
-        </div>
+        <Col>
+        <Card>
+        <Card.Img className="custom-img mx-auto p-3" variant="top" fluid src={img} />
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>
+            {description}
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      </Col>
     );
 };
 

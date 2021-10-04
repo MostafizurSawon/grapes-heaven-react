@@ -1,0 +1,7 @@
+span{
+    text-decoration: none;
+    color: black;
+}
+span:hover{
+    color: white;
+}

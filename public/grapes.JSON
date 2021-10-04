@@ -1,90 +1,50 @@
 [
     {
         "key": "1",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "Helping Hand",
+        "description": "We will help you in every possible way. All you have to do is tell us your problem. We are ready to help you always.",
+        "img": "./service/serviceone.jpg"
     },
     {
         "key": "2",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "Beautiful Campus",
+        "description": "We have beautiful campus so that you can learn comfortably. We will practically show you how can you grow grapes in your own land.",
+        "img": "./service/servicetwo.jpg"
     },
     {
         "key": "3",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "How to use fertizer and soil",
+        "description": "We will show you how to properly make your soil and if there are any bad insect we will teach you how to deal with it.",
+        "img": "./service/servicethree.jpg"
     },
     {
         "key": "4",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "Rich Library",
+        "description": "We have Absolutely one of the best library. Here you can read all the famous book about grapes.",
+        "img": "./service/four.jpg"
     },
     {
         "key": "5",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "Government Certified",
+        "description": "We are certified by the Government. So you dont't have to worry about any fraud.",
+        "img": "./service/five.jpg"
     },
     {
         "key": "6",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "Cheap",
+        "description": "our course fee is minimal. So that everyone can afford it. ",
+        "img": "./service/six.jpg"
     },
     {
         "key": "7",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "Win a prize",
+        "description": "If you successfully grow grapes in your land with 1 year, you will be given a chance to win a national prize.",
+        "img": "./service/seven.jpg"
     },
     {
         "key": "8",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
-    },
-    {
-        "key": "9",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
-    },
-    {
-        "key": "10",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
-    },
-    {
-        "key": "11",
-        "name": "Mr John Carter",
-        "experience": "5 years",
-        "fee": 25000,
-        "expert": "Moon Drops Grapes",
-        "img": "https://www.foodrepublic.com/wp-content/uploads/2015/10/Moon-Drops-620x930.jpg"
+        "name": "Extra Care",
+        "description": "If  you face any uncertain problem, we will help you as much as possible. All you need to do is to reach to us.",
+        "img": "./service/eight.jpg"
     }
 ]

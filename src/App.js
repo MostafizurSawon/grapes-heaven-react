@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About/About';
 import Services from './components/Services/Services';
 import SuccessStory from './components/SuccessStory/SuccessStory';
@@ -22,6 +23,9 @@ function App() {
 
         <Switch>
           <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/home">
             <Home />
           </Route>
           <Route exact path="/services">
