@@ -9,7 +9,7 @@ const Header = () => {
   const icon = <FontAwesomeIcon icon={faSeedling} />
     return (
         <div>
-          <Navbar bg="light" expand="lg">
+          <Navbar fixed="top" bg="light" expand="lg">
               <Container>
                   <Navbar.Brand>
                       <NavLink className="custom text-success" to="/">{icon} Grapes Heaven</NavLink></Navbar.Brand>
