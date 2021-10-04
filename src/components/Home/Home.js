@@ -21,7 +21,7 @@ const Home = () => {
         <div className="container">
         <div className="my-5">
         <Row>
-            <Col>
+            <Col sm>
             <h2 className="mt-5">Welcome to <span className="text-info">Grapes Heaven</span></h2>
             <p>We offer courses for growing grapes. As we all know grape is a popular fruit. But most of the people dont know how to grow it properly. So we are offering course so that you can learn how to grow grapes properly.
                 <br /> <br />
@@ -29,7 +29,7 @@ const Home = () => {
                 Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juice, jelly, grape seed extract, vinegar, and grape seed oil, or dried as raisins, currants and sultanas. Grapes are a non-climacteric type of fruit, generally occurring in clusters.
             </p>
             </Col>
-            <Col>
+            <Col sm>
             <Image src="https://image.freepik.com/free-photo/grape-farmers-are-happy-sell-online-market-grapes_1150-5792.jpg" fluid />
             </Col>
         </Row>
