@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Image, Row } from 'react-bootstrap';
 
+
 const About = () => {
     return (
         <div className="container">

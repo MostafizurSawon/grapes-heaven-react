@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { Accordion, Card, Carousel, Col, Image, Row, Button, Badge, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import HomeService from './HomeService/HomeService';
 import './Home.css';
 import grapes from '../../images/black.jpg';
 import grapesTwo from '../../images/blackgrapes.jpg';
 import grapesThree from '../../images/green.jpg';
+import HomeCourse from './HomeCourse/HomeCourse';
 
 
 const Home = () => {
     const [services, setServices] = useState([]);
+    const [courses, setCourses] = useState([]);
     useEffect(() =>{
         fetch('./grapes.JSON')
         .then(res=>res.json())
         .then(data => setServices(data))
     },[]);
-    const add = <FontAwesomeIcon icon={faPlus} />
+
+    useEffect(() =>{
+        fetch('./course.JSON')
+        .then(res=>res.json())
+        .then(data=>setCourses(data))
+    } ,[])
     return (
         <div className="container">
         <div className="my-5">
@@ -34,87 +40,14 @@ const Home = () => {
             </Col>
         </Row>
         </div>
-
-        <div className="my-5">
-            <h2 className="text-info mb-5">Our Offering Courses</h2>
-        <Row>
-            <Col sm>
-            <Card>
-                <Card.Header>4 Month Course</Card.Header>
-                <Card.Body>
-                    <Card.Title>Course Fee : ৳ 15000</Card.Title>
-                    <Card.Text>
-                    Grow grapes in your garden after completing this course.
-                    </Card.Text>
-                    <Button variant="success">{add} Enroll Now</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-            <Col sm>
-            <Card>
-                <Card.Header>6 Month Course</Card.Header>
-                <Card.Body>
-                    <Card.Title>Course Fee : ৳ 20000 <Badge bg="secondary">New</Badge></Card.Title>
-                    <Card.Text> 
-                    Grow grapes in your garden after completing this course.
-                    </Card.Text>
-                    <Button variant="success">{add} Enroll Now</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-            <Col sm>
-            <Card>
-                <Card.Header>1 Year Course</Card.Header>
-                <Card.Body>
-                    <Card.Title>Course Fee : ৳ 25000</Card.Title>
-                    <Card.Text>
-                    Grow grapes in your garden after completing this course.
-                    </Card.Text>
-                    <Button variant="success">{add} Enroll Now</Button>
-                </Card.Body>
-                </Card>
-            </Col>
+        <h2 className="mt-5 text-info">Our Current Courses</h2>
+        <Row xs={1} md={2} className="g-4 my-4">
+            {
+                courses.map(course =><HomeCourse key={course.key} course={course}></HomeCourse>)
+            }
         </Row>
-        <Row className="my-4">
-            <Col sm>
-            <Card>
-                <Card.Header>2 Month Crash Course</Card.Header>
-                <Card.Body>
-                    <Card.Title>Course Fee : ৳ 5000</Card.Title>
-                    <Card.Text>
-                    Learn few tips and tricks
-                    </Card.Text>
-                    <Button variant="success">{add} Enroll Now</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-            <Col sm>
-            <Card>
-                <Card.Header>How to prepare soil</Card.Header>
-                <Card.Body>
-                    <Card.Title>Course Fee : ৳ 2000 <Badge bg="secondary">New</Badge></Card.Title>
-                    <Card.Text> 
-                    Learn how to preapare your soil.
-                    </Card.Text>
-                    <Button variant="success">{add} Enroll Now</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-            <Col sm>
-            <Card>
-                <Card.Header>2 Year Course</Card.Header>
-                <Card.Body>
-                    <Card.Title>Course Fee : ৳ 45000</Card.Title>
-                    <Card.Text>
-                   Learn everything we have to over.
-                    </Card.Text>
-                    <Button variant="success">{add} Enroll Now</Button>
-                </Card.Body>
-                </Card>
-            </Col>
-        </Row>
-        </div>
 
+        
         <Carousel>
         <Carousel.Item interval={1000}>
             <img

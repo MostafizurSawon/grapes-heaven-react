@@ -1,0 +1,38 @@
+[
+    {
+        "key": "1",
+        "name": "4 Month Course",
+        "fee": "15000",
+        "description": "Grow grapes in your garden after completing this course."
+    },
+    {
+        "key": "2",
+        "name": "6 Month Course",
+        "fee": "20000",
+        "description": "Grow grapes in your garden after completing this course."
+    },
+    {
+        "key": "3",
+        "name": "1 Year Course",
+        "fee": "25000",
+        "description": "Grow grapes in your garden after completing this course."
+    },
+    {
+        "key": "4",
+        "name": "2 Month Crash Course",
+        "fee": "5000",
+        "description": "Grow grapes in your garden after completing this course."
+    },
+    {
+        "key": "5",
+        "name": "How to prepare soil",
+        "fee": "2000",
+        "description": "Grow grapes in your garden after completing this course."
+    },
+    {
+        "key": "6",
+        "name": "2 Year Course",
+        "fee": "45000",
+        "description": "Grow grapes in your garden after completing this course."
+    }
+]
